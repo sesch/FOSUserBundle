@@ -13,6 +13,7 @@ namespace FOS\UserBundle\Model;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * Storage agnostic user object
@@ -26,6 +27,7 @@ abstract class User implements UserInterface, GroupableInterface
 
     /**
      * @var string
+     * @JMS\Type("string")
      */
     protected $username;
 
