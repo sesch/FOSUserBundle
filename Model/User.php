@@ -34,7 +34,7 @@ abstract class User implements UserInterface, GroupableInterface
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\Groups({"login", "overview"})
+     * @JMS\Groups({"login", "overview","Default"})
      * @JMS\SerializedName("name")
      * @JMS\Expose
      */
